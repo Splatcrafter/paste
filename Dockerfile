@@ -15,4 +15,4 @@ FROM nginx:alpine
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
-EXPOSE 80/tcp
+EXPOSE 1020/tcp
